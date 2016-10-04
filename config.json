@@ -1,0 +1,131 @@
+{
+  "copyright": "\n********************************************\n* 2005–2016 All Rights Reserved. P2H, Inc. *\n********************************************\n",
+  "updateMenu": [
+    {
+      "question": "Select action:",
+      "caption": "Continue project",
+      "value": "project_continue",
+      "run": [
+        { "matchValue": "npm install", "fsNotExist": "markup/node_modules" },
+        "grunt"
+      ]
+    },
+    {
+      "caption": "Update project modules",
+      "value": "project_update",
+      "run": ["npm update"]
+    },
+    {
+      "caption": "Release project (ready for QA)",
+      "value": "project_dist",
+      "run": ["grunt dist"]
+    }
+  ],
+  "createMenu": [
+    {
+      "question": "Select project type:",
+      "caption": "Markup Only",
+      "value": "markup_only",
+      "menu": [
+        {
+          "question": "Select framework:",
+          "caption": "No framework",
+          "value": "https://github.com/b0jik86/base-template.git"
+        },
+        {
+          "caption": "Bootstrap",
+          "value": "https://github.com/b0jik86/bootstrap.git"
+        },
+        {
+          "caption": "Zurb Foundation",
+          "value": "https://github.com/b0jik86/foundation.git"
+        },
+        {
+          "caption": "Materialize",
+          "value": "https://github.com/b0jik86/materialize.git"
+        },
+        {
+          "caption": "Exit level",
+          "value": false
+        }
+      ]
+    },
+    {
+      "caption": "Markup + CMS",
+      "value": "markup_cms",
+      "menu": [
+        {
+          "question": "Select CMS:",
+          "caption": "WordPress",
+          "value": "wp",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "https://github.com/b0jik86/wp.git"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "https://github.com/b0jik86/bootstrap-wp.git"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "https://github.com/b0jik86/foundation-wp.git",
+              "tasks": [ "bower install" ]
+            },
+            {
+              "caption": "Materialize",
+              "value": "https://github.com/b0jik86/materialize-wp.git",
+              "tasks": [ "bower install" ]
+            },
+            {
+	          "caption": "Exit level",
+	          "value": false
+	        }
+          ]
+        },
+        {
+          "caption": "Magento",
+          "value": "https://github.com/b0jik86/magento.git"
+        },
+        {
+          "caption": "Other CMS",
+          "value": "other_cms",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "https://github.com/b0jik86/cms-no-framework.git"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "https://github.com/b0jik86/bootstrap-wp.git"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "https://github.com/b0jik86/foundation-wp.git",
+              "tasks": [ "bower install" ]
+            },
+            {
+              "caption": "Materialize",
+              "value": "https://github.com/b0jik86/materialize-wp.git",
+              "tasks": [ "bower install" ]
+            },
+            {
+	          "caption": "Exit level",
+	          "value": false
+	        }
+          ]
+        },
+        {
+          "caption": "Exit level",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "data": {
+    "path": "markup",
+    "run": [ "npm install", "grunt" ]
+  }
+}
