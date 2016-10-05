@@ -57,32 +57,7 @@
         {
           "question": "Select CMS:",
           "caption": "WordPress",
-          "value": "wp",
-          "menu": [
-            {
-              "question": "Select framework:",
-              "caption": "No framework",
-              "value": "https://github.com/b0jik86/wp.git"
-            },
-            {
-              "caption": "Bootstrap",
-              "value": "https://github.com/b0jik86/bootstrap-wp.git"
-            },
-            {
-              "caption": "Zurb Foundation",
-              "value": "https://github.com/b0jik86/foundation-wp.git",
-              "tasks": [ "bower install" ]
-            },
-            {
-              "caption": "Materialize",
-              "value": "https://github.com/b0jik86/materialize-wp.git",
-              "tasks": [ "bower install" ]
-            },
-            {
-	          "caption": "Exit level",
-	          "value": false
-	        }
-          ]
+          "value": "https://github.com/b0jik86/wp.git"
         },
         {
           "caption": "Magento",
