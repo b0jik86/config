@@ -57,7 +57,30 @@
         {
           "question": "Select CMS:",
           "caption": "WordPress",
-          "value": "https://github.com/b0jik86/wp.git"
+          "value": "wp",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "https://github.com/b0jik86/wp.git"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "https://github.com/b0jik86/bootstrap-wp.git"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "https://github.com/b0jik86/foundation-wp.git"
+            },
+            {
+              "caption": "Materialize",
+              "value": "https://github.com/b0jik86/materialize-wp.git"
+            },
+            {
+              "caption": "Exit level",
+              "value": false
+            }
+          ]
         },
         {
           "caption": "Magento",
@@ -74,22 +97,20 @@
             },
             {
               "caption": "Bootstrap",
-              "value": "https://github.com/b0jik86/bootstrap-wp.git"
+              "value": "https://github.com/b0jik86/cms-bootstrap.git"
             },
             {
               "caption": "Zurb Foundation",
-              "value": "https://github.com/b0jik86/foundation-wp.git",
-              "tasks": [ "bower install" ]
+              "value": "https://github.com/b0jik86/cms-foundation.git"
             },
             {
               "caption": "Materialize",
-              "value": "https://github.com/b0jik86/materialize-wp.git",
-              "tasks": [ "bower install" ]
+              "value": "https://github.com/b0jik86/cms-materialize.git"
             },
             {
-	          "caption": "Exit level",
-	          "value": false
-	        }
+  	          "caption": "Exit level",
+  	          "value": false
+  	        }
           ]
         },
         {
